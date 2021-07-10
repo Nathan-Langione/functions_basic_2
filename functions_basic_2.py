@@ -27,12 +27,20 @@ def values_greater_than_second(lst):
         return False
     new_list = []
     second_val = lst[1]
-    for i in range(0, len(lst), 1):
-        print(i)
+    for i in lst:
         if i > second_val:
             new_list.append(i)
-            print(new_list)
     print(len(new_list))
     return new_list
 print(values_greater_than_second([5,2,3,2,1,4]))
 print(values_greater_than_second([3]))
+
+
+#This Length, That Value 
+def length_and_value(size, value):
+    new_list = []
+    for i in range(0, size, 1):
+        new_list.append(value)
+    return new_list
+print(length_and_value(4,7))
+print(length_and_value(6,2))
